@@ -1,0 +1,53 @@
+body{
+    
+    background-position: center;
+    background-size: cover;
+}
+
+/*#picture{
+    display: block;
+    
+    width: 50%;
+}*/
+header{
+    text-align: center;
+}
+.insert{
+    text-align: center;
+}
+.input{
+    text-align: center;
+}
+.box{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    position: relative;
+    margin: auto;
+}
+#main{
+    font-size: 100px;
+}
+#count{
+    font-size: 25px;
+}
+.box .temperature{
+    position: absolute;
+    font-size: 50px;
+    right: 258px;
+    top: 110px;
+}
+.box .max{
+    position: absolute;
+    font-size: 25px;
+    right: 175px;
+    top: 110px
+}
+.box .min{
+    position: absolute;
+    font-size: 25px;
+    right: 177px;
+    top: 130px
+}
+

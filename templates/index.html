@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javi's weather website </title>
+        <link rel="stylesheet" type = "text/css" href="static/main.css">
+    </head>
+    <!--setting the background for the whole body-->
+    <body background="data:image/jpeg;base64,{{ img_data }}">
+        <header>
+            <h1>Welcome to my Weather App</h1>
+
+        </header>
+        <main>
+            <!--<image id="picture" src="data:image/jpeg;base64,{{ img_data }}">-->
+            <div class = "insert">
+            <h2>Please Insert your City</h2>
+            </div>
+            <!-- posting to website-->
+            <form method="post" class = "input">
+                <!-- storing users input as city-->
+                <input type="text" name="city">
+
+            </form>
+            <!-- Outputting weather data -->
+            <div class = "box">
+                <span id = "main">{{data.name}}</span>
+                <span id = "count">{{data.country}}</span>
+                <br>
+                
+                <div class = "temperature">{{data.temperature}}</div>
+                <div class = "max">max: {{data.max}}</div>
+                <div class = "min">min: {{data.min}}</div>
+                
+                <br><br>
+                <br>
+                Current weather: {{data.weather}}
+                <br>
+                {{data.description}}
+                <br>
+                Feels like: {{data.feels_like}}
+                <br>
+                Wind: {{data.wind}}mph
+
+
+
+                
+            </div>
+
+        </main>
+    </body>
+</html>
